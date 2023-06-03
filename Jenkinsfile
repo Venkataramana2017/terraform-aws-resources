@@ -13,8 +13,8 @@ def TerraApply(String LayerToDeploy, String Environment, String TerraAction) {
         LAYER=${LayerToDeploy} WORKSPACE=${Environment} make ${TerraAction}
         """
 }
-pipeline {
-    agent { label 'jenkins-slave'}
+pipeline {	
+	agent any 
     parameters {
         booleanParam(name: '_1_Network', defaultValue: false, description: 'Apply network layer')
         booleanParam(name: '_2_Launch_template_ec2', defaultValue: false, description: 'launch template ec2 creation')

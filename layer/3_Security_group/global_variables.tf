@@ -9,8 +9,8 @@ variable "tcbuk_account_id" {
   description = "AWS account number for tcb-infra"
   default = {
     "default" = ""
-     dev   = "708401978288"
-     test  = "708401978288"
+     dev   = "902303113716"
+     test  = "902303113716"
    }
 }
 

@@ -29,7 +29,7 @@ pipeline {
                     checkout([
                         $class: 'GitSCM', branches: [[name: '*/main']],
                         extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'terraform-aws-resources-module']],
-                        userRemoteConfigs: [[ url:  'https://gitlab.com/bvramana2000/terraform-aws-resources-module.git',
+                        userRemoteConfigs: [[ url:  'https://github.com/Venkataramana2017/terraform-aws-resources-module',
                         credentialsId:  'git_credentials']]
                     ])
                 }
